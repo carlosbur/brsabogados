@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(238, 191, 181);
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 1.5rem;
+}
+
+#header__logo{
+    max-width: 700px;
+}
+
+#header__nav{
+    display: flex;
+    justify-content: center;
+}
+
+#header__nav li{
+    list-style-type: none;
+    display:none;
+    padding: .5rem 0 0 0;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+#header__nav li a{
+    text-decoration: none;
+    color: rgb(28, 37, 66);
+    transition: all 0.2s linear;
+}
+
+#header__nav li a:hover{
+    color: rgb(242, 229, 229);
+}
+
+#header__icono{
+    align-self: center;
+    justify-self: center;
+    display: block;
+    cursor: pointer;
+    
+}
+
+#section__nosotros{
+    background-color: aliceblue;
+}
+
+
+
+
+
+footer{
+    background-color: blue;
+}
+
+
+@media (min-width: 700px) {
+    #header{
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    #header__logo{
+        max-width: 1200px;
+        max-height: 500px;
+    }
+    
+    #header__nav li{
+        display: inline;
+            padding: 2rem;
+        font-weight: 600;
+        font-size: 1.5em;
+        }
+
+    #header__icono{
+        display: none;
+    }
+}
