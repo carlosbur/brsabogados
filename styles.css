@@ -23,9 +23,17 @@
     justify-content: center;
 }
 
+#header__nav ul{
+    display: none;
+}
+
+#header__nav ul.show{
+    display: inline;
+}
+
+
 #header__nav li{
     list-style-type: none;
-    display:none;
     padding: .5rem 0 0 0;
     font-weight: 600;
     font-size: 1rem;
@@ -34,7 +42,7 @@
 
 #header__nav li a{
     text-decoration: none;
-    color: rgb(28, 37, 66);
+    color: #1c2542;
     transition: all 0.2s linear;
 }
 
@@ -43,11 +51,12 @@
 }
 
 #header__icono{
+    font-size: 20px;
+    color: #1c2542;
     align-self: center;
     justify-self: center;
     display: block;
     cursor: pointer;
-    
 }
 
 #section__nosotros{
@@ -72,10 +81,15 @@ footer{
         max-width: 1200px;
         max-height: 500px;
     }
+
+    #header__nav ul{
+        display: inline;
+    }
+    
     
     #header__nav li{
         display: inline;
-            padding: 2rem;
+        padding: 2rem;
         font-weight: 600;
         font-size: 1.5em;
         }
