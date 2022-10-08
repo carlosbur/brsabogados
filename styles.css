@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
-
+    font-family: "Montserrat", sans-serif;
 }
 
 #header{
@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(238, 191, 181);
-    font-family: "Montserrat", sans-serif;
     padding-bottom: 1.5rem;
 }
 
@@ -60,7 +59,13 @@
 }
 
 #section__nosotros{
-    background-color: aliceblue;
+    background-color: rgb(245, 245, 245);
+    background-image: linear-gradient(rgba(245,245,245,.6), rgba(245,245,245,.6)), url(./imagenes/10.png);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1c2542;
 }
 
 
