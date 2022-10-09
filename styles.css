@@ -33,7 +33,7 @@
 
 #header__nav li{
     list-style-type: none;
-    padding: .5rem 0 0 0;
+    padding: .8rem 0 0 0;
     font-weight: 600;
     font-size: 1rem;
 
@@ -59,8 +59,12 @@
 }
 
 #section__nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: rgb(245, 245, 245);
-    background-image: linear-gradient(rgba(245,245,245,.6), rgba(245,245,245,.6)), url(./imagenes/10.png);
+    background-image: linear-gradient(rgba(245,245,245,.8), rgba(245,245,245,.8)), url(./imagenes/10.png);
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -68,9 +72,63 @@
     color: #1c2542;
 }
 
+#tituloPrincipal{
+    margin: 1.5rem auto;
+    font-size: 2rem;
+}
 
+#subtituloPrincipal{
+    margin: 1.5rem auto;
+    font-size: 1.7rem; 
+    font-weight: 600;
+    font-style: italic;
+}
 
+#section__nosotros p{
+    font-size: 1.2rem;
+    margin: .5rem;
+    line-height: 1.8rem;
+}
 
+#section__servicios{
+    background-color: rgba(238, 191, 181, .5);
+}
+
+#section__servicios__contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+#section__servicios__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid  rgba(28, 37, 66, .7);
+    background-color: whitesmoke;
+    color: #1c2542;
+    padding: 2rem 0;
+}
+
+#section__servicios__link h3{
+    font-size: 1.7rem;
+}
+
+#section__servicios__link p{
+    width: 80%;
+    font-size: 1.1em;
+    padding: 1rem 0;
+}
+
+#section__servicios__foto{
+    width: 80%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 40px;
+}
 
 footer{
     background-color: blue;
