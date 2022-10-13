@@ -214,18 +214,36 @@ footer{
 
 footer h1{
     padding: 1rem;
+}
 
-
+footer h2{
+    padding: .5rem 0 2rem 0;
 }
 
 #footer__info{
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: .4rem;
 }
 
 #footer__info i{
     margin-right: 6px;
+}
+
+#botones__fijos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    background-color: rgb(211, 211, 211);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #1c2542;
 }
 
 
