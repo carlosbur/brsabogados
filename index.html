@@ -25,10 +25,10 @@
     </header>
     <main> 
         <section id="section__nosotros">
-            <h2 id="tituloPrincipal">Nuestra filosofía es trabajar para el cliente, enfoncándonos en brindar un serivicio de calidad</h2>
+            <h2 id="section__nosotros__titulo">Nuestra filosofía es trabajar para el cliente, enfoncándonos en brindar un serivicio de calidad</h2>
             <p>No trabajamos con casos. Trabajamos con <b>personas</b>.</p>    
             <p>Cada <b>persona</b> que confía en nuestro asesoramiento recibe un trato personal y directo, con explicaciones claras y simples sobre su caso concreto</p>    
-            <h3 id="subtituloPrincipal"> Simplificando el derecho para vos</h3>
+            <h3 id="section__nosotros__subtitulo"> Simplificando el derecho para vos</h3>
         </section>
         <section id="section__servicios">
             <div id="section__servicios__contenedor">
@@ -36,26 +36,51 @@
                     <h3>Amparos de Salud</h3>
                     <img src="./imagenes/amparo.jpg" alt="Amparos de Salud" id="section__servicios__foto">                    
                     <p>Tu <b>salud</b> está primero. Si tu cobertura no llega, o llega tarde, contactanos.</p>
-                    <a href="">Más info</a>
+                    <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
                 <div id="section__servicios__link">
                     <h3>Accidentes de tránsito</h3>
                     <img src="./imagenes/accidente.jpg" alt="Accidentes de Tránsito" id="section__servicios__foto">
-                    <p>Tu <b>salud</b> está primero. Si tu cobertura no llega, o llega tarde, contactanos.</p>
-                    <a href="">Más info</a>
+                    <p>Si tuviste un <b>accidente de tránsito</b>, es importante que actúes <b>rápido</b>. Contactanos.</p>
+                    <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
                 <div id="section__servicios__link">
                     <h3>Defensas penales</h3>
+                    <img src="./imagenes/penales.jpg" alt="Defensas Penales" id="section__servicios__foto">                    
+                    <p>Defenderse desde el <b>minuto cero</b> es fundamental si estás involucrado en una Causa Penal. Contactanos</p>
+                    <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
-
             </div>    
         </section>
         <section id="section__contacto">
-            <h2>Contacto</h2>    
+            <h2 id="section__contacto__titulo">Contactate con nuestro Equipo</h2>
+            <div>
+                <form action="" id="section__contacto__formulario">
+                    <input type="text" name="nombre" required>
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="apellido" required>
+                    <label for="apellido">Apellido*</label>
+                    <input type="number" name="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input type="email" name="email" required>
+                    <label for="email">Correo electrónico*</label>
+                    <textarea name="textArea" id="section__contacto__textArea" cols="30" rows="10"></textarea>
+                    <label for="textArea">Mensaje*</label>
+                    <input type="button" value="Borrar" name="borrar" id="section__contacto__botones">
+                    <input type="submit" name="enviar" id="section__contacto__botones">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        HOLA SOY EL FOOTER
+        <h1>Carlos Bur - Abogado</h1>
+        <div id="footer__info">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Mitre 68, Bahía Blanca, Provincia de Buenos Aires</p>
+        </div>
+        
+        <p><i class="fa-brands fa-whatsapp"></i>11 5937 7756</p>
+        <p><i class="fa-solid fa-envelope"></i>carlos.bur@brsabogados.com.ar</p>
     </footer>
 </body>
 </html>
