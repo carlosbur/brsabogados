@@ -243,8 +243,12 @@ footer h2{
     height: 60px;
     border-radius: 50%;
     font-size: 30px;
+}
+
+#botones__fijos i{
     color: #1c2542;
 }
+
 
 
 @media (min-width: 700px) {
