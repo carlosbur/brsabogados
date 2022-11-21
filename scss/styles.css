@@ -16,7 +16,7 @@
   max-width: 700px;
 }
 #header #header__icono {
-  font-size: 20px;
+  font-size: 30px;
   color: #1c2542;
   align-self: center;
   justify-self: center;
@@ -37,7 +37,7 @@
   list-style-type: none;
   padding: 0.8rem 0 0 0;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #header #header__nav li a {
   text-decoration: none;
@@ -54,7 +54,7 @@
   align-items: center;
   text-align: center;
   background-color: rgb(245, 245, 245);
-  background-image: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(./imagenes/10.png);
+  background-image: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../imagenes/10.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -75,6 +75,9 @@
   font-size: 1.7rem;
   font-weight: 600;
   font-style: italic;
+}
+#section__nosotros #section__nosotros__mapa {
+  display: none;
 }
 
 #section__servicios {
@@ -198,42 +201,102 @@ footer #footer__info i {
   margin-right: 6px;
 }
 
-#botones__fijos {
+.botones__fijos {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.botones__fijos .botones__fijos__call, .botones__fijos .botones__fijos__wa {
+  display: flex;
   position: fixed;
   right: 15px;
   bottom: 20px;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(211, 211, 211);
   width: 60px;
   height: 60px;
   border-radius: 50%;
   font-size: 30px;
 }
-#botones__fijos i {
+.botones__fijos .botones__fijos__wa {
+  bottom: 100px;
+}
+.botones__fijos a {
+  text-decoration: none;
+}
+.botones__fijos a:active:link:visited {
+  text-decoration: none;
+}
+.botones__fijos i {
   color: #1c2542;
+  text-decoration: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 476px) {
   #header {
     align-items: center;
     padding-bottom: 2rem;
   }
-  #header__logo {
+  #header #header__logo {
     max-width: 1200px;
-    max-height: 500px;
+    max-height: 400px;
   }
-  #header__nav ul {
+  #header #header__nav ul {
     display: inline;
   }
-  #header__nav li {
+  #header #header__nav li {
     display: inline;
-    padding: 2rem;
+    padding: 1rem;
     font-weight: 600;
     font-size: 1.5em;
   }
-  #header__icono {
+  #header #header__icono {
     display: none;
+  }
+}
+@media (min-width: 700px) {
+  #header__logo {
+    max-width: 1400px;
+    max-height: 600px;
+  }
+  #section__nosotros {
+    background-repeat: repeat;
+  }
+  #section__nosotros #section__nosotros__mapa {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  #section__nosotros a {
+    text-decoration: none;
+  }
+  #section__nosotros i {
+    font-size: 50px;
+    color: #1c2542;
+    padding: 20px;
+  }
+  #section__nosotros i:visited:active:link {
+    text-decoration: none;
+  }
+}
+@media (min-width: 1000px) {
+  #section__nosotros #section__nosotros__mapa iframe {
+    width: 80vw;
+  }
+  #section__nosotros #section__nosotros__mapa i:hover {
+    color: rgb(238, 191, 181);
+  }
+  .botones__fijos__call i:hover, .botones__fijos__wa i:hover {
+    color: rgb(245, 245, 245);
+  }
+  #section__servicios #section__servicios__contenedor #section__servicios__link h3 {
+    font-size: 1.9em;
+  }
+  #section__servicios #section__servicios__contenedor #section__servicios__link p {
+    width: 80%;
+    font-size: 1.8em;
+    padding: 1rem 0;
+  }
+  #section__servicios #section__servicios__contenedor #section__servicios__boton {
+    font-size: 1.3em;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="scripts.js"></script>
 </head>
+
 <body>
     <header id="header">
         <img src="./imagenes/1_RGB.png" alt="" id="header__logo">
@@ -23,34 +25,54 @@
             </ul>
         </nav>
     </header>
-    <main> 
+    <main>
         <section id="section__nosotros">
-            <h2 id="section__nosotros__titulo">Nuestra filosofía es trabajar para el cliente, enfoncándonos en brindar un serivicio de calidad</h2>
-            <p>No trabajamos con casos. Trabajamos con <b>personas</b>.</p>    
-            <p>Cada <b>persona</b> que confía en nuestro asesoramiento recibe un trato personal y directo, con explicaciones claras y simples sobre su caso concreto</p>    
+            <h2 id="section__nosotros__titulo">Nuestra filosofía es trabajar para el cliente, enfoncándonos en brindar
+                un serivicio de calidad</h2>
+            <p>No trabajamos con casos. Trabajamos con <b>personas</b>.</p>
+            <p>Cada <b>persona</b> que confía en nuestro asesoramiento recibe un trato personal y directo, con
+                explicaciones claras y simples sobre su caso concreto</p>
+            <div id="section__nosotros__mapa">
+                <p class="direccion">
+                    Encontranos en Mitre 68, Bahía Blanca.
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.6597312070035!2d-62.266079447610004!3d-38.71609244725063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbdcafdd96c79%3A0x5dd815d99ceee440!2sCarlos%20Alberto%20Bur%20-%20Abogado!5e0!3m2!1ses!2sar!4v1669055198757!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="redes">También podés contactarnos en nuestras redes sociales</p>
+                <a class="instagram" href="https://www.instagram.com/carlosbur_abogado" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> 
+                </a>
+                <a  class="facebook" href= "https://www.facebook.com/carlosburabogado" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
             <h3 id="section__nosotros__subtitulo"> Simplificando el derecho para vos</h3>
         </section>
         <section id="section__servicios">
             <div id="section__servicios__contenedor">
                 <div id="section__servicios__link">
                     <h3>Amparos de Salud</h3>
-                    <img src="./imagenes/amparo.jpg" alt="Amparos de Salud" id="section__servicios__foto">                    
+                    <img src="./imagenes/amparo.jpg" alt="Amparos de Salud" id="section__servicios__foto">
                     <p>Tu <b>salud</b> está primero. Si tu cobertura no llega, o llega tarde, contactanos.</p>
                     <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
                 <div id="section__servicios__link">
                     <h3>Accidentes de tránsito</h3>
                     <img src="./imagenes/accidente.jpg" alt="Accidentes de Tránsito" id="section__servicios__foto">
-                    <p>Si tuviste un <b>accidente de tránsito</b>, es importante que actúes <b>rápido</b>. Contactanos.</p>
+                    <p>Si tuviste un <b>accidente de tránsito</b>, es importante que actúes <b>rápido</b>. Contactanos.
+                    </p>
                     <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
                 <div id="section__servicios__link">
                     <h3>Defensas penales</h3>
-                    <img src="./imagenes/penales.jpg" alt="Defensas Penales" id="section__servicios__foto">                    
-                    <p>Defenderse desde el <b>minuto cero</b> es fundamental si estás involucrado en una Causa Penal. Contactanos</p>
+                    <img src="./imagenes/penales.jpg" alt="Defensas Penales" id="section__servicios__foto">
+                    <p>Defenderse desde el <b>minuto cero</b> es fundamental si estás involucrado en una Causa Penal.
+                        Contactanos</p>
                     <a href="index.html" id="section__servicios__boton">Más Info</a>
                 </div>
-            </div>    
+            </div>
         </section>
         <section id="section__contacto">
             <h2 id="section__contacto__titulo">Contactate con nuestro Equipo</h2>
@@ -88,8 +110,14 @@
             <p>carlos.bur@brsabogados.com.ar</p>
         </div>
     </footer>
-    <div id="botones__fijos">
-        <a href="""><i class="fa-solid fa-phone"></i></a>
+    <div class="botones__fijos">
+        <a class="botones__fijos__call" href="tel:+541159377756" target="_blank">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a class="botones__fijos__wa" href="https://wa.me/5491159377756" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
     </div>
 </body>
+
 </html>
