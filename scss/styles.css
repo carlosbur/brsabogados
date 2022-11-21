@@ -61,38 +61,33 @@
   background-attachment: fixed;
   color: #1c2542;
 }
-
-#section__nosotros__titulo {
+#section__nosotros p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  line-height: 1.8rem;
+}
+#section__nosotros #section__nosotros__titulo {
   margin: 1.5rem auto;
   font-size: 2rem;
 }
-
-#section__nosotros__subtitulo {
+#section__nosotros #section__nosotros__subtitulo {
   margin: 1.5rem auto;
   font-size: 1.7rem;
   font-weight: 600;
   font-style: italic;
 }
 
-#section__nosotros p {
-  font-size: 1.2rem;
-  margin: 0.5rem;
-  line-height: 1.8rem;
-}
-
 #section__servicios {
   background-color: rgba(238, 191, 181, 0.5);
 }
-
-#section__servicios__contenedor {
+#section__servicios #section__servicios__contenedor {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
   text-align: center;
   padding: 2rem;
 }
-
-#section__servicios__link {
+#section__servicios #section__servicios__contenedor #section__servicios__link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,25 +96,21 @@
   color: #1c2542;
   padding: 2rem 0;
 }
-
-#section__servicios__link h3 {
+#section__servicios #section__servicios__contenedor #section__servicios__link h3 {
   font-size: 1.7rem;
 }
-
-#section__servicios__link p {
+#section__servicios #section__servicios__contenedor #section__servicios__link p {
   width: 80%;
   font-size: 1.1em;
   padding: 1rem 0;
 }
-
-#section__servicios__foto {
+#section__servicios #section__servicios__contenedor #section__servicios__foto {
   width: 80%;
   height: 80%;
   padding: 2rem;
   border-radius: 40px;
 }
-
-#section__servicios__boton {
+#section__servicios #section__servicios__contenedor #section__servicios__boton {
   text-decoration: none;
   color: whitesmoke;
   background-color: rgb(238, 191, 181);
@@ -134,15 +125,13 @@
   background-color: #1c2542;
   padding-bottom: 2rem;
 }
-
-#section__contacto__titulo {
+#section__contacto #section__contacto__titulo {
   color: whitesmoke;
   padding: 2rem;
   font-size: 2rem;
   text-align: center;
 }
-
-#section__contacto__formulario {
+#section__contacto #section__contacto__formulario {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -152,14 +141,11 @@
   font-weight: 600;
   width: 60vw;
 }
-
-#section__contacto__formulario label {
+#section__contacto #section__contacto__formulario label {
   padding: 0.4rem 0 1rem 0;
   margin-left: 0.6rem;
 }
-
-#section__contacto__formulario input,
-#section__contacto__textArea {
+#section__contacto #section__contacto__formulario input, #section__contacto #section__contacto__formulario #section__contacto__textArea {
   line-height: 1.8rem;
   border-radius: 15px;
   font-size: 1.2rem;
@@ -167,13 +153,15 @@
   border: none;
   outline: none;
 }
-
-#section__contacto__formulario input:focus {
+#section__contacto #section__contacto__formulario input:focus, #section__contacto #section__contacto__formulario #section__contacto__textArea:focus {
   box-shadow: 2px -2px rgba(238, 191, 181, 0.5);
   transition: 0.3s linear;
 }
-
-#section__contacto__botones {
+#section__contacto #section__contacto__formulario #section__contacto__textArea:focus {
+  box-shadow: 2px -2px rgba(238, 191, 181, 0.5);
+  transition: 0.3s linear;
+}
+#section__contacto #section__contacto__formulario #section__contacto__botones {
   align-self: left;
   text-align: left;
   width: 50%;
@@ -181,8 +169,7 @@
   font-weight: 600;
   background-color: rgba(238, 191, 181, 0.5);
 }
-
-#section__contacto__botones:hover {
+#section__contacto #section__contacto__formulario #section__contacto__botones:hover {
   cursor: pointer;
   box-shadow: 3px -2px rgba(28, 37, 66, 0.7);
 }
@@ -194,23 +181,20 @@ footer {
   align-items: center;
   padding: 1rem;
 }
-
 footer h1 {
   padding: 1rem;
 }
-
 footer h2 {
-  padding: 0.5rem 0 2rem 0;
+  padding: 0.5rem 0 1.5rem 0;
 }
-
-#footer__info {
+footer #footer__info {
   display: flex;
   width: 100%;
   justify-content: center;
   padding: 0.4rem;
+  text-align: center;
 }
-
-#footer__info i {
+footer #footer__info i {
   margin-right: 6px;
 }
 
@@ -227,7 +211,6 @@ footer h2 {
   border-radius: 50%;
   font-size: 30px;
 }
-
 #botones__fijos i {
   color: #1c2542;
 }
